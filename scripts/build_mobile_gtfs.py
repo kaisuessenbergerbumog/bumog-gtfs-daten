@@ -18,15 +18,14 @@ from pathlib import Path
 # Approximate operational corridor, deliberately excluding St. Poelten,
 # Waldviertel and Mostviertel. Coordinates are (longitude, latitude).
 CORRIDOR = [
-    (16.02, 46.70),
+    (16.00, 46.70),
     (17.25, 46.70),
-    (17.25, 49.05),
-    (16.28, 49.05),
-    (16.12, 48.72),
-    (16.10, 48.43),
-    (15.98, 48.18),
-    (15.92, 47.92),
-    (15.86, 47.55),
+    (17.25, 48.18),
+    (16.78, 48.18),
+    (16.62, 47.98),
+    (16.43, 47.82),
+    (16.30, 47.58),
+    (16.12, 47.28),
 ]
 
 INPUT = Path(sys.argv[1] if len(sys.argv) > 1 else "gtfs.zip")
