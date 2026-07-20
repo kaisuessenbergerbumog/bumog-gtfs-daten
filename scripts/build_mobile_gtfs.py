@@ -120,7 +120,7 @@ def main():
         included_shapes = set()
         included_services = set()
         for row in dict_rows(source, "trips.txt"):
-            if row.get("route_id") in included_routes:
+            if row.get("trip_id") in touching_trips:
                 included_trips.add(row.get("trip_id", ""))
                 if row.get("shape_id"):
                     included_shapes.add(row["shape_id"])
